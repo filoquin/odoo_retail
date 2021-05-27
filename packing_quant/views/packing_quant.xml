@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<record id="packing_quant_form" model="ir.ui.view">
+		<field name="name">packing_quant.form</field>
+		<field name="model">stock.packing_quant</field>
+		<field name="arch" type="xml">
+			<form string="description">
+				<sheet>
+					<group>
+						<field name="location_id"/>
+						<field name="packaging_type_id"/>
+						<field name="product_ids" widget="many2many_tags"/>
+                            <field domain="[('model', '=', 'product.packaging')]" name="report_id"/>
+					</group>
+					<footer>
+                        <button name="action_print_labels" string="Imprimir" type="object"/>
+                        <button class="btn-default" special="cancel" string="Cancel"/>
+					</footer>
+				</sheet>
+			</form>
+		</field>
+	</record>
+	<record id="action_packing_quant" model="ir.actions.act_window">
+		<field name="name">packing quant</field>
+		<field name="res_model">stock.packing_quant</field>
+		<field name="view_mode">form</field>
+		<field name="target">new</field>
+	</record>
+<menuitem id="packing_quant_menu" parent="stock.menu_warehouse_report" action="action_packing_quant"/>	
+</odoo>
