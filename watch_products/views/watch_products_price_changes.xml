@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<record id="watch_products_price_changes_tree" model="ir.ui.view">
+			<field name="name">watch_products_price_changes.tree</field>
+			<field name="model">watch.products.price.changes</field>
+			<field name="arch" type="xml">
+				<tree string="description">
+					<field name="product_tmpl_id"/>
+					<field name="last_change"/>
+					<field name="list_price"/>
+				</tree>
+			</field>
+		</record>
+		<record id="watch_products_price_changes_search" model="ir.ui.view">
+			<field name="name">watch_products_price_changes.search</field>
+			<field name="model">watch.products.price.changes</field>
+			<field name="arch" type="xml">
+				<search string="Changes">
+					<field name="last_change" operator="&gt;=" string="desde dd/mm/aaaa"/>
+					<field name="product_tmpl_id"/>
+
+					<filter domain="[('last_change','&gt;=',context_today().strftime('%Y-%m-01'))]" name="this_mont" string="this month"/>
+					<filter domain="[('last_change','&gt;=',(context_today()-relativedelta(months=12)).strftime('%Y-%m-01'))]" name="last_year" string="last year"/>
+					<filter context="{'group_by' : 'last_change'}" name="group_by_month" domain="[]" string="por mes"/>
+					<filter context="{'group_by' : 'last_change:day'}" domain="[]" name="group_by_date" string="por dia"/>
+					<filter context="{'group_by' : 'last_change:week'}" name="group_by_week" domain="[]" string="por semana"/>
+					<filter context="{'group_by' : 'partner_id'}" domain="[]" name="group_partner_id" string="por proveedor"/>
+					<filter context="{'group_by' : 'categ_id'}" domain="[]" name="group_categ_id" string="por categoria"/>
+				</search>
+			</field>
+		</record>
+		<record id="action_watch_products_price_changes" model="ir.actions.act_window">
+			<field name="name">Cambios de precio</field>
+			<field name="res_model">watch.products.price.changes</field>
+			<field name="view_mode">tree</field>
+			<field name="context">{'search_default_group_partner_id':1, 'search_default_this_mont':1,'search_default_group_by_date':1}</field>
+		</record>
+		<menuitem action="action_watch_products_price_changes" id="watch_products_price_changes_menu" parent="stock.menu_stock_inventory_control"/>
+	</data>
+</openerp>

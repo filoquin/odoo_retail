@@ -1,0 +1,5 @@
+"id","name","model_id/id","group_id/id","perm_read","perm_write","perm_create","perm_unlink"
+"watch_products.watch_product","watch","watch_products.model_product_watch_products","stock.group_stock_user","True","True","True","True"
+"watch_products.price_history","product.history","watch_products.model_product_sale_price_history","stock.group_stock_user","True","","True",""
+"watch_products.watch_products_price_changes","product.history","watch_products.model_watch_products_price_changes","stock.group_stock_user","True","","True",""
+

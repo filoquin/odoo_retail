@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="paperformat_a4label" model="report.paperformat">
+        <field name="name">label A4</field>
+        <field eval="False" name="default"/>
+        <field name="format">A4</field>
+        <field name="page_height">0</field>
+        <field name="page_width">0</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">20</field>
+        <field name="margin_bottom">20</field>
+        <field name="margin_left">7</field>
+        <field name="margin_right">7</field>
+        <field eval="False" name="header_line"/>
+        <field name="header_spacing">0</field>
+        <field name="dpi">90</field>
+    </record>
+    <report id="report_label_65x40" model="product.template" name="watch_products.report_label_watch_product_65x40" report_type="qweb-pdf" string="Etiqueta 65x40"/>
+    <record id="report_label_65x40" model="ir.actions.report">
+        <field name="paperformat_id" ref="paperformat_a4label"/>
+    </record>
+    <report id="report_label_watch_product_half" model="product.template" name="watch_products.report_label_watch_product_half" report_type="qweb-pdf" string="Etiqueta 1/2 pagina"/>
+    <record id="report_label_watch_product_half" model="ir.actions.report">
+        <field name="paperformat_id" ref="paperformat_a4label"/>
+    </record>
+</odoo>

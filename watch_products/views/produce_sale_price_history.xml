@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record model='ir.ui.view' id='produce_sale_price_history_tree'>
+        	<field name='name'>produce_sale_price_history.tree</field>
+        	<field name='model'>produce.sale.price.history</field>
+        	<field name='arch' type='xml'>
+        		<tree string='description'>
+					<field name="product_template_id"/>
+					<field name="datetime"/>
+					<field name="list_price"/>
+        		</tree>
+        	</field>
+        </record>
+    </data>
+    <record id="produce_sale_price_history_search" model="ir.ui.view">
+        <field name="name">produce_sale_price_history.search</field>
+        <field name="model">produce.sale.price.history</field>
+        <field name="arch" type="xml">
+            <search string="String">
+					<field name="product_template_id"/>
+					<field name="datetime"/>
+					<field name="list_price"/>
+            </search>
+        </field>
+    </record>
+    <record id="action_produce_sale_price_history" model="ir.actions.act_window">
+    	<field name="name">produce_sale_price_history</field>
+    	<field name="res_model">produce.sale.price.history</field>
+    	<field name="view_type">form</field>
+    	<field name="view_mode">tree</field>
+    </record>
+</openerp>

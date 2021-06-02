@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <template id="report_label_watching_product">
+            <t t-call="report.html_container">
+                <div class="page">
+                    <t t-as="o" t-foreach="docs">
+                        <div style="height:100px;margin:0;page-break-inside: avoid; overflow:hidden;width:100%;">
+                            <div style="vertical-align:top;float:right;width:10%;height:100px;overflow:hidden;text-align:left;">
+                                <img t-attf-src="data:image/*;base64,{{o.get_barcode(o.default_code)}}"/>
+                            </div>
+                            <div style="vertical-align:top; float:left;width:90%;height:40%;overflow:hidden;padding-top:5px;text-align:left">
+                                <div style="float:left;width:100%;padding-top:0px;text-align:left">
+                                    <span style="font-size:1.5em;font-weight: 700;" t-field="o.name"/><span>(</span>
+                                    <span style="font-size:0.8em;font-weight: 300;" t-field="o.default_code"/>
+                                    <span>)</span></div>
+                            </div>
+                            <div style="float:left;width:90%;height:60%;overflow:hidden;text-align:left;">
+                                <div style="width:50%; border-top:1px solid #000;  display:inline-block; vertical-align:top;background-color:#DDD;">
+                                    <div style="font-size:2.0em;font-weight: 700; text-align:left; display:inline-block;width:50%; vertical-align:top;">
+                                        <t t-raw="o.ba_price_frendly_style(o.price_with_tax)"/>
+                                    </div>
+                                    <div style="width:48%;display:inline-block;">
+                                        <div style="font-size:0.8em;font-weight: 300; text-align:right;width:30%; display:inline-block; overflow:hidden; vertical-align:top;">12 CUOTAS 
+                                            
+                                            
+                                            
+                                            
+                                            <br/>
+                                            FIJAS DE         </div>
+                                        <div style="font-size:1.6em;font-weight: 700; text-align:left; display:inline-block;width:60%; vertical-align:top;">
+                                            <t t-raw="o.ba_price_frendly_style(o.price_with_tax / 12)"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style=" display:inline-block;width:48%; vertical-align:top; border-top:1px solid #000; ">
+                                    <div style="font-size:0.8em;font-weight: 700; text-align:left;width:25%; display:inline-block; overflow:hidden; vertical-align:top;">MEJOR PRECIO
+                                        
+                                        
+                                        
+                                        <br/>
+                                        1 PAGO</div>
+                                    <div style="font-size:2.0em;font-weight: 700; text-align:center; display:inline-block;width:48%; vertical-align:top; ">
+                                        <t t-raw="o.ba_price_frendly_style(o.total_price)"/>
+                                    </div>
+                                    <div style="font-size:0.7em;display:inline-block;width:20%;font-weight:700;">26% de Descuento</div>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </div>
+            </t>
+        </template>
+        <template id="report_corner_watching_product">
+            <t t-call="report.html_container">
+                <div class="page">
+                    <t t-as="o" t-foreach="docs">
+                        <div style="width:400px;height:250px;margin:0;padding:3px;border:solid #eee 1px;float:left;page-break-inside: avoid;font-size:10px;">
+                            <div style="padding-top:5px; overflow  :hidden;">
+                                <span style="font-size:1.3em;font-weight: 700;" t-field="o.name"/>(
+                                
+                                
+                                <span style="font-size:0.8em;font-weight: 700;" t-field="o.default_code"/>
+                                )</div>
+                            <div style="font-size:10px;width:28%;display:inline-block;vertical-align:top; overflow:hidden; ">
+                                <img t-attf-src="data:image/*;base64,{{o.get_barcode(o.default_code)}}"/>
+                            </div>
+                            <div style="font-size:10px;width:70%; border-top:1px solid #000; border-bottom:1px solid #000;background-color:#DDD; display:inline-block;vertical-align:top;">
+                                <div style="font-size:4.0em;font-weight: 700; text-align:center;">
+                                    <t t-raw="o.ba_price_frendly_style(o.price_with_tax)"/>
+                                </div>
+                                <div style="font-size:1.2em;font-weight:300;width:50%; text-align:right; display:inline-block;">12 CUOTAS SIN INTERES DE
+                                        </div>
+                                <div style="font-size:2.0em;font-weight: 700; text-align:center;width:48%; display:inline-block;">
+                                    <t t-raw="o.ba_price_frendly_style(o.price_with_tax / 12)"/>
+                                </div>
+                            </div>
+                            <div style="font-size:10px;width:100%;">
+                                <div style="font-size:1.8em;font-weight: 700; text-align:center;width:40%; text-align:right; display:inline-block;">MEJOR PRECIO
+                                    
+                                    
+                                    <br/>
+                                    1 PAGO</div>
+                                <div style="font-size:3.4em;font-weight: 700; text-align:center;width:58%; text-align:right; display:inline-block;">
+                                    <t t-raw="o.ba_price_frendly_style(o.total_price)"/>
+                                </div>
+                                <div style="font-size:1.8em; text-align:center;font-weight: 700;width:100%;color:#FFF;background:#000;">26% de Descuento</div>
+                            </div>
+                        </div>
+                    </t>
+                </div>
+            </t>
+        </template>
+        <template id="report_carpita_watching_product">
+            <t t-call="report.html_container">
+                <div class="page">
+                    <t t-as="o" t-foreach="docs">
+                        <div style="width:350px;height:200px;margin:0;padding:3px;border:solid #eee 1px;float:left;page-break-inside: avoid;font-size:10px;">
+                            <div style="padding-top:5px; overflow  :hidden;">
+                                <span style="font-size:1.3em;font-weight: 700;" t-field="o.name"/>(
+                                
+                                
+                                <span style="font-size:0.8em;font-weight: 700;" t-field="o.default_code"/>
+                                )</div>
+                            <div style="font-size:10px;width:28%;display:inline-block;vertical-align:top; overflow:hidden; ">
+                                <img t-attf-src="data:image/*;base64,{{o.get_barcode(o.default_code)}}"/>
+                            </div>
+                            <div style="font-size:10px;width:70%; border-top:1px solid #000; border-bottom:1px solid #000;background-color:#DDD; display:inline-block;vertical-align:top;">
+                                <div style="font-size:4.0em;font-weight: 700; text-align:center;">
+                                    <t t-raw="o.ba_price_frendly_style(o.price_with_tax)"/>
+                                </div>
+                                <div style="font-size:1.2em;font-weight:300;width:50%; text-align:right; display:inline-block;">12 CUOTAS SIN INTERES DE
+                                        </div>
+                                <div style="font-size:2.0em;font-weight: 700; text-align:center;width:48%; display:inline-block;">
+                                    <t t-raw="o.ba_price_frendly_style(o.price_with_tax / 12)"/>
+                                </div>
+                            </div>
+                            <div style="font-size:10px;width:100%;">
+                                <div style="font-size:1.4em;font-weight: 700; text-align:center;width:50%; text-align:right; display:inline-block;">MEJOR PRECIO
+                                    
+                                    
+                                    <br/>
+                                    1 PAGO</div>
+                                <div style="font-size:2.8em;font-weight: 700; text-align:center;width:48%; text-align:right; display:inline-block;">
+                                    <t t-raw="o.ba_price_frendly_style(o.total_price)"/>
+                                </div>
+                                <div style="font-size:1.6em; text-align:center;font-weight: 700;width:100%;color:#FFF;background:#000;">26% de Descuento</div>
+                            </div>
+                        </div>
+                    </t>
+                </div>
+            </t>
+        </template>
+        <template id="report_table_watching_product">
+            <t t-call="report.html_container">
+                <div class="page" style="font-weight: 300;">
+                    <t t-as="o" t-foreach="docs">
+                        <div style="float:left;width:45%;height:300px;margin:0;padding:3px;border:solid #eee 1px;margin-right:4%;page-break-inside: avoid;">
+                            <div style="padding-top:5px;text-align:center">
+                                <div style="width:100%;padding-top:0px;text-align:center;">
+                                    <span style="font-size:1.6em;font-weight: 700;" t-field="o.name"/><span>(
+                                    </span>
+                                    <span style="font-size:0.8em;font-weight: 300;" t-field="o.default_code"/>
+                                    <span>)</span></div>
+                            </div>
+                            <div style="">
+                                <div style="font-size:15px;width:100%; border-top:1px solid #000; background:#DDD; ">
+                                    <div style="font-size:2.6em;font-weight: 700; text-align:center;">
+                                        <t t-raw="o.ba_price_frendly_style(o.price_with_tax)"/>
+                                    </div>
+                                </div>
+                                <div style="width:100%">
+                                    <div style="font-size:1.0em;font-weight:300;width:48%; text-align:right; display:inline-block">12 CUOTAS FIJAS DE</div>
+                                    <div style="font-size:2.2em;font-weight: 700; text-align:center;width:48%; display:inline-block">
+                                        <t t-raw="o.ba_price_frendly_style(o.price_with_tax / 12)"/>
+                                    </div>
+                                </div>
+                                <div style="font-size:15px;width:100%; border-top:1px solid #000; border-bottom:1px solid #000; ">
+                                    <div style="font-size:1.1em;font-weight: 700; text-align:center;">MEJOR PRECIO
+1 PAGO
+                                    </div>
+                                    <div style="font-size:2.6em;font-weight: 700; text-align:center;">
+                                        <t t-raw="o.ba_price_frendly_style(o.total_price)"/>
+                                    </div>
+                                    <div style="color:#FFF;background:#000;font-size:1.5em;font-weight: 700; text-align:center;">26% de Descuento</div>
+                                </div>
+                            </div>
+                            <div style="font-size:0.5em;font-weight: 100">Impreso: 
+                                
+                                
+                                <span t-esc="time.strftime('%d-%m-%Y')"/></div>
+                        </div>
+                    </t>
+                </div>
+            </t>
+        </template>
+        <template id="report_full_watching_product">
+    <t t-call="report.html_container">
+        <t t-as="o" t-foreach="docs">
+            <div class="page">
+                <div style="float:left;width:100%;height:1000px;margin:0;padding:3px;border:solid #eee 1px;margin-right:4%;">
+                    <div style="padding-top:5px;text-align:center">
+                        <img src="/ba_watching_products/static/logo/b.png" style="padding:15px;"/>
+                        <br/>
+                        <div style="width:100%;padding-top:0px;text-align:center;">
+                            <div style="font-size:1.8em;font-weight: 700;" t-field="o.default_code"/>
+                            <div style="font-size:4.5em;font-weight: 700;" t-field="o.name"/>
+                        </div>
+                    </div>
+                    <div style="">
+                        <div style="font-size:15px;width:100%">
+                            <div style="font-size:8.0em;font-weight: 700; text-align:center;">
+                                <t t-raw="o.ba_price_frendly_style(o.price_with_tax)"/>
+                            </div>
+                            <br/>
+                            <br/>
+                        </div>
+                        <div style="width:100%">
+                            <div style="font-size:4.0em;font-weight:300; text-align:center;">12 CUOTAS DE</div>
+                            <div style="font-size:6.0em;font-weight: 700;text-align:center;">
+                                <t t-raw="o.ba_price_frendly_style(o.price_with_tax / 12)"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="font-size:0.5em;font-weight: 100">Impreso: 
+                                        
+                                
+                        <span t-esc="time.strftime('%d-%m-%Y')"/></div>
+                </div>
+            </div>
+        </t>
+    </t>
+</template>
+    </data>
+</openerp>
