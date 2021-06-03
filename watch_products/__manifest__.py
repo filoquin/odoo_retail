@@ -10,7 +10,7 @@ Permite generar codigos de productos para estanterias por equipo de ventas.
     """,
     'author': 'Filoquin',
     'website': 'http://sipecu.com.ar',
-    'depends': ['base', 'stock', 'product', 'base_multi_store'],
+    'depends': ['base', 'stock', 'product'],
     'data': [
         'security/ir.model.access.csv',
         'views/watch_products.xml',

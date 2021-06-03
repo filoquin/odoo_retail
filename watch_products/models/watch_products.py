@@ -44,10 +44,6 @@ class ProductWatchProducts(models.Model):
         string='count',
         default=1
     )
-    store_id = fields.Many2one(
-        'res.store',
-        string='Store',
-    )
 
     def open_bulk_code(self):
         view = self.env.ref('watch_products.bulk_codes_form')

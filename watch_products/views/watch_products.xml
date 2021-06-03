@@ -8,7 +8,6 @@
                 <tree string="watch products">
                     <field name="name"/>
                     <field name="report_id"/>
-                    <field name="store_id"/>
                 </tree>
             </field>
         </record>
@@ -25,7 +24,6 @@
                             <field name="name"/>
                         </h1>
                         <group>
-                            <field name="store_id"/>
                             <field domain="[('model', '=', 'product.template')]" name="report_id"/>
                             <field name="count_by_product"/>
                             <field name="product_ids">
@@ -59,9 +57,6 @@
                     <field name="name"/>
                     <field name="team_id"/>
                     <field name="report_id"/>
-                    <field name="store_id"/>
-                    <filter context="" domain="[('store_id.user_ids.id','=',uid)]" name="my" string="Mi 
-                        Tienda"/>
 
                 </search>
             </field>
