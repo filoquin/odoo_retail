@@ -1,5 +1,5 @@
 <odoo>
-    <template id="report_invoice_document" inherit_id="l10n_ar.report_invoice_document">
+    <template id="report_invoice_document" inherit_id="l10n_ar.report_invoice_document"  primary="True">
         <xpath expr="//t[@t-if='o.invoice_date_due']" position="after">
             <strong class="col-6">Cambiando la factura</strong>
         </xpath>
@@ -10,5 +10,8 @@
         </xpath>
 
     </template>
+
+        <template id="report_invoice_document_with_payments" inherit_id="l10n_ar.report_invoice_document_with_payments" primary="True">
+
 </odoo>
 
