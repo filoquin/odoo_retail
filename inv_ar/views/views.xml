@@ -3,6 +3,12 @@
         <xpath expr="//t[@t-if='o.invoice_date_due']" position="after">
             <strong class="col-6">Cambiando la factura</strong>
         </xpath>
+
+        <xpath expr="//t[@t-if='o.currency_id != o.company_id.currency_id']" position="after">
+                    <br/><strong>Otro: coso ouesto despues del currency</strong>
+
+        </xpath>
+
     </template>
 </odoo>
 
