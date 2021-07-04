@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
+import logging
+
 from openerp import api, fields, models
 
-
-import logging
 _logger = logging.getLogger(__name__)
 
 
@@ -23,8 +23,11 @@ class productTagPrint(models.TransientModel):
         'ir.actions.report',
         string='Report',
         required=True,
-        domain=[('model', '=', 'product.product'), ]
-    )
+        domain=[
+            ('model', '=', 'product.product'),
+            ('binding_model_id', '!=', False),
+            ]
+        )
 
     line_ids = fields.One2many(
         'product.tag_print.line',
