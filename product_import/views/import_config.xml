@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+		<record id="product_import_config_tree" model="ir.ui.view">
+			<field name="name">product_import_config.tree</field>
+			<field name="model">product.import.config</field>
+			<field name="arch" type="xml">
+				<tree string="Config" default_order="partner_id">
+					<field name="name"/>
+					<field name="partner_id"/>
+					<field name="file_format"/>
+				</tree>
+			</field>
+		</record>
+		<record id="product_import_config_form" model="ir.ui.view">
+			<field name="name">product_import_config.form</field>
+			<field name="model">product.import.config</field>
+			<field name="arch" type="xml">
+				<form string="Config">
+					<header>
+						<button name="action_import" string="Import" type="object"/>
+					</header>
+					<sheet>
+						<h1>
+							<field name="name"/>
+						</h1>
+						<group>
+							<field name="partner_id" attrs="{'required':['match_supplier','=', True]}"/>
+							<field name="file_format"/>
+						</group>
+						<group col="2">
+							<field attrs="{'invisible':[('file_format','!=','csv')]}" name="csv_delimiter"/>
+							<field attrs="{'invisible':[('file_format','!=','csv')]}" name="csv_quotechar"/>
+							<field name="start_line"/>
+							<field attrs="{'invisible':[('file_format','==','csv')]}" name="sheet_ids" widget="many2many_tags"/>
+						</group>
+						<notebook>
+							<page string="Import">
+								<span>
+									<field name="import_ids">
+										<tree order="create_date desc">
+											<field name="create_date"/>
+											<field name="create_uid"/>
+											<field name="file_ids"/>
+											<field name="state"/>
+											<button name="action_import" string="Open" type="object"/>
+										</tree>
+									</field>
+								</span>
+							</page>
+							<page string="Fields">
+								<span>
+									<field name="field_ids" order="column asc">
+										<tree editable="top">
+											<field name="field_def_id"/>
+											<field name="column"/>
+											<field name="required"/>
+											<field name="match"/>
+											<field name="preprocessed_id"/>
+										</tree>
+									</field>
+								</span>
+							</page>
+							<page string="config">
+								<group string="Default values">
+									<span>
+										<field name="default_value_ids">
+											<tree editable="top">
+												<field domain="[('model_id.model', 'in', ['product.supplierinfo','product.product'])]" name="field_id"/>
+												<field name="field_value"/>
+											</tree>
+										</field>
+									</span>
+								</group>
+								<group>
+									<field name="context"/>
+									<field name="supplierinfo"/>
+									<field name="match_supplier"/>
+									<field name="default_categ_id"/>
+								</group>
+							</page>
+						</notebook>
+					</sheet>
+				</form>
+			</field>
+		</record>
+		<record id="product_import_config_search" model="ir.ui.view">
+			<field name="name">product_import_config.search</field>
+			<field name="model">product.import.config</field>
+			<field name="arch" type="xml">
+				<search string="config">
+					<field name="name"/>
+					<field name="partner_id"/>
+					<field name="file_format"/>
+				</search>
+			</field>
+		</record>
+		<record id="action_product_import_config" model="ir.actions.act_window">
+			<field name="name">Import product</field>
+			<field name="res_model">product.import.config</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+
+		<menuitem action="action_product_import_config" id="product_import_config_menu" parent="purchase.menu_purchase_products"/>
+		<record id="product_import_preprocessed_form" model="ir.ui.view">
+			<field name="name">product_import_preprocessed.form</field>
+			<field name="model">product.import.preprocessed</field>
+			<field name="arch" type="xml">
+				<form string="description">
+					<sheet>
+						<group>
+							<field name="name"/>
+							<field name="python_code"/>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+		<record id="product_import_config_field_form" model="ir.ui.view">
+			<field name="name">product_import_config_field.form</field>
+			<field name="model">product.import.config.field</field>
+			<field name="arch" type="xml">
+				<form string="description">
+					<sheet>
+						<group>
+							<field name="name"/>
+							<field domain="[('model_id.model', 'in', ['product.supplierinfo','product.product','product.packaging'])]" name="field_id"/>
+							<field name="preprocessed_id"/>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+	</data>
+</odoo>

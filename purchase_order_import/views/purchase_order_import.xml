@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="purchase_order_import_config_form" model="ir.ui.view">
+            <field name="name">purchase_order_import_config.form</field>
+            <field name="model">purchase.order.import_config</field>
+            <field name="arch" type="xml">
+                <form string="import config">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="partner_id"/>
+                            <field name="file_format"/>
+                            <field attrs="{'invisible':[('file_format','!=','csv')]}" name="csv_delimiter"/>
+                            <field attrs="{'invisible':[('file_format','!=','csv')]}" name="csv_quotechar"/>
+                            <field attrs="{'invisible':[('file_format','!=','xls')]}" name="sheet"/>
+                            <field name="start_line"/>
+                            <field name="match_code"/>
+                            <field name="code_column"/>
+                            <field name="description_column"/>
+                            <field name="qty_column"/>
+                            <field name="discount_column"/>                            
+                            <field name="price_column"/>
+                            <field name="replace_comma"/>
+                            <field name="tax"/>
+                            <field name="tax_coefficient" attrs="{'invisible': [('tax', '=', False)]}"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="purchase_order_import_form" model="ir.ui.view">
+            <field name="name">purchase_order_import.form</field>
+            <field name="model">purchase.order.import</field>
+            <field name="arch" type="xml">
+                <form string="description">
+                    <header>
+                        <button name="tests" string="test" type="object"/>
+                        <button name="create_purchase" string="create purchase" type="object"/>
+                    </header>
+                    <sheet>
+                        <h1>
+                            <field name="name"/>
+                        </h1>
+                        <group>
+                            <field name="file_ids" widget="many2many_binary"/>
+                            <field name="start_line"/>
+                            <field name="origin"/>
+                            <field name="test" readonly="True"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="action_purchase_order_import" model="ir.actions.act_window">
+            <field name="name">purchase import</field>
+            <field name="res_model">purchase.order.import</field>
+            <field name="view_mode">form</field>
+        </record>
+        <menuitem id="purchase_order_import_menu" name="purchase import" parent="purchase.menu_procurement_management" action="action_purchase_order_import"/>
+    </data>
+</openerp>

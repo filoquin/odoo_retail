@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<record id="product_import_form" model="ir.ui.view">
+		<field name="name">product_import.form</field>
+		<field name="model">product.import</field>
+		<field name="priority">15</field>
+		<field name="arch" type="xml">
+			<form string="description">
+				<header>
+					<button name="action_process" states="draft,process" string="Process" type="object"/>
+					<button name="chunk_update_data" states="process" string="Update products" type="object"/>
+					<button context="{'update_supplierinfo':True}" name="chunk_update_data" states="process" string="Update product &amp; supplier" type="object"/>
+					<button name="create_data" states="updated" string="Insert new" type="object"/>
+					<button name="action_done" states="updated,created" string="Done" type="object"/>
+					<button name="action_restart" states="updated,created" string="restart" type="object"/>
+					<button name="action_cancel" states="draft,process" string="Cancel" type="object"/>
+					<button name="action_list" states="done" string="view products" type="object"/>
+					<field name="state" widget="statusbar"/>
+				</header>
+				<sheet>
+					<h1>
+						<field name="config_id" readonly="True"/>
+					</h1>
+					<group>
+						<field name="file_ids" widget="many2many_binary"/>
+					</group>
+					<group col="4">
+						<field name="created" readonly="True"/>
+						<field name="updated" readonly="True"/>
+					</group>
+					<group col="2">
+
+						<field name="error" readonly="True"/>
+						<field name="product_ids" string="Productos" widget="x2many_counter"/>
+					</group>
+					<group string="update">
+						<span>
+							<!--field name="write_values"/-->
+							<field field_value="parsed_value" field_x_axis="field_id" field_y_axis="product_id" name="write_values_ids" widget="x2many_2d_matrix">
+								<tree>
+									<field name="product_id"/>
+									<field name="parsed_value"/>
+									<field name="field_id"/>
+									<field name="unic"/>
+								</tree>
+							</field>
+						</span>
+					</group>
+					<group string="Create">
+						<span>
+							<!--field name="create_values"/-->
+							<field field_value="parsed_value" field_x_axis="field_id" field_y_axis="unic" name="create_values_ids" widget="x2many_2d_matrix">
+								<tree>
+									<field name="id"/>
+									<field name="parsed_value"/>
+									<field name="field_id"/>
+									<field name="unic"/>
+								</tree>
+							</field>
+						</span>
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+	<record id="product_import_update_form" model="ir.ui.view">
+		<field name="name">product_import_update.form</field>
+		<field name="model">product.import</field>
+		<field name="priority">20</field>
+		<field name="arch" type="xml">
+			<form string="description">
+				<sheet>
+					<group string="Update">
+						<span>
+							<field field_value="parsed_value" field_x_axis="field_id" field_y_axis="product_id" name="write_values_ids" widget="x2many_2d_matrix"/>
+						</span>
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+	<record id="product_import_create_form" model="ir.ui.view">
+		<field name="name">product_import_create.form</field>
+		<field name="model">product.import</field>
+		<field name="priority">20</field>
+		<field name="arch" type="xml">
+			<form string="description">
+				<sheet>
+					<group string="New">
+						<span>
+							<field field_value="parsed_value" field_x_axis="field_id" field_y_axis="product_id" name="create_values_ids" widget="x2many_2d_matrix"/>
+						</span>
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+</odoo>

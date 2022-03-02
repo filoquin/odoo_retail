@@ -1,0 +1,223 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* purchase_order_import
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0-20220220\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-02 02:28+0000\n"
+"PO-Revision-Date: 2022-03-02 00:06-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_AR\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#. module: purchase_order_import
+#: model:ir.model.fields,field_description:purchase_order_import.field_purchase_order_import_config__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: purchase_order_import
+#: model:ir.model.fields,field_description:purchase_order_import.field_purchase_order_import_config__code_column
+msgid "Code Column"
+msgstr "Columna de Código"
+
+#. module: purchase_order_import
+#: model:ir.model.fields,field_description:purchase_order_import.field_purchase_order_import_config__tax
+msgid "Con IVA"
+msgstr "Con IVA"
+
+#. module: purchase_order_import
+#: model:ir.model.fields,field_description:purchase_order_import.field_purchase_order_import__create_uid
+#: model:ir.model.fields,field_description:purchase_order_import.field_purchase_order_import_config__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: purchase_order_import
+#: model:ir.model.fields,field_description:purchase_order_import.field_purchase_order_import__create_date
+#: model:ir.model.fields,field_description:purchase_order_import.field_purchase_order_import_config__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: purchase_order_import
+#: model:ir.model.fields,field_description:purchase_order_import.field_purchase_order_import_config__description_column
+msgid "Description Column"
+msgstr "Columna de  descripción"
+
+#. module: purchase_order_import
+#: model:ir.model.fields,field_description:purchase_order_import.field_purchase_order_import__display_name
+#: model:ir.model.fields,field_description:purchase_order_import.field_purchase_order_import_config__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: purchase_order_import
+#: model:ir.model.fields,field_description:purchase_order_import.field_purchase_order_import__file_ids
+msgid "File"
+msgstr "Archivo"
+
+#. module: purchase_order_import
+#: model:ir.model.fields,field_description:purchase_order_import.field_purchase_order_import__id
+#: model:ir.model.fields,field_description:purchase_order_import.field_purchase_order_import_config__id
+msgid "ID"
+msgstr "ID"
+
+#. module: purchase_order_import
+#: model:ir.model.fields,field_description:purchase_order_import.field_purchase_order_import____last_update
+#: model:ir.model.fields,field_description:purchase_order_import.field_purchase_order_import_config____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: purchase_order_import
+#: model:ir.model.fields,field_description:purchase_order_import.field_purchase_order_import__write_uid
+#: model:ir.model.fields,field_description:purchase_order_import.field_purchase_order_import_config__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización realizada por"
+
+#. module: purchase_order_import
+#: model:ir.model.fields,field_description:purchase_order_import.field_purchase_order_import__write_date
+#: model:ir.model.fields,field_description:purchase_order_import.field_purchase_order_import_config__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: purchase_order_import
+#: model:ir.model.fields,field_description:purchase_order_import.field_purchase_order_import_config__match_code
+msgid "Match code"
+msgstr "Código a buscar"
+
+#. module: purchase_order_import
+#: model:ir.model.fields,field_description:purchase_order_import.field_purchase_order_import__name
+#: model:ir.model.fields,field_description:purchase_order_import.field_purchase_order_import_config__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: purchase_order_import
+#: model:ir.model.fields,field_description:purchase_order_import.field_purchase_order_import__origin
+msgid "Origin"
+msgstr "Origen"
+
+#. module: purchase_order_import
+#: model:ir.model.fields,field_description:purchase_order_import.field_purchase_order_import_config__price_column
+msgid "Price Column"
+msgstr "Columna  de precio"
+
+#. module: purchase_order_import
+#: model:ir.model.fields,field_description:purchase_order_import.field_purchase_order_import_config__qty_column
+msgid "Qty Column"
+msgstr "Columna de Cantidad"
+
+#. module: purchase_order_import
+#: model:ir.model.fields,field_description:purchase_order_import.field_purchase_order_import_config__replace_comma
+msgid "Remplazar comas"
+msgstr "Remplazar comas"
+
+#. module: purchase_order_import
+#: model:ir.model.fields,field_description:purchase_order_import.field_purchase_order_import_config__sheet
+msgid "Sheet"
+msgstr "Hoja"
+
+#. module: purchase_order_import
+#: model:ir.model.fields,field_description:purchase_order_import.field_purchase_order_import_config__partner_id
+msgid "Supplier"
+msgstr "Proveedor"
+
+#. module: purchase_order_import
+#: model:ir.model.fields.selection,name:purchase_order_import.selection__purchase_order_import_config__match_code__supplier
+msgid "Supplier code"
+msgstr "Código de proveedor"
+
+#. module: purchase_order_import
+#: model:ir.model.fields,field_description:purchase_order_import.field_purchase_order_import__test
+msgid "Test"
+msgstr "Test"
+
+#. module: purchase_order_import
+#: model_terms:ir.ui.view,arch_db:purchase_order_import.purchase_order_import_form
+msgid "create purchase"
+msgstr "Crear Compra"
+
+#. module: purchase_order_import
+#: model:ir.model.fields,field_description:purchase_order_import.field_purchase_order_import_config__csv_delimiter
+msgid "csv delimiter"
+msgstr "Delimitador csv"
+
+#. module: purchase_order_import
+#: model:ir.model.fields,field_description:purchase_order_import.field_purchase_order_import_config__csv_quotechar
+msgid "csv quotechar"
+msgstr "Comilla CSV"
+
+#. module: purchase_order_import
+#: model_terms:ir.ui.view,arch_db:purchase_order_import.purchase_order_import_form
+msgid "description"
+msgstr "descripcion"
+
+#. module: purchase_order_import
+#: model:ir.model.fields,field_description:purchase_order_import.field_purchase_order_import_config__discount_column
+msgid "discount Column"
+msgstr "Columna de descuento"
+
+#. module: purchase_order_import
+#: model:ir.model.fields.selection,name:purchase_order_import.selection__purchase_order_import_config__match_code__dun14
+msgid "dun14"
+msgstr "dun14"
+
+#. module: purchase_order_import
+#: model:ir.model.fields.selection,name:purchase_order_import.selection__purchase_order_import_config__match_code__ean13
+msgid "ean13"
+msgstr "ean13"
+
+#. module: purchase_order_import
+#: model:ir.model.fields,field_description:purchase_order_import.field_purchase_order_import_config__file_format
+msgid "file format"
+msgstr "Formato de archivo"
+
+#. module: purchase_order_import
+#: model_terms:ir.ui.view,arch_db:purchase_order_import.purchase_order_import_config_form
+msgid "import config"
+msgstr "Configuracion de Importacion de compras"
+
+#. module: purchase_order_import
+#: model:ir.model.fields.selection,name:purchase_order_import.selection__purchase_order_import_config__match_code__default_code
+msgid "internal code"
+msgstr "Codigo interno"
+
+#. module: purchase_order_import
+#: model:ir.actions.act_window,name:purchase_order_import.action_purchase_order_import
+#: model:ir.ui.menu,name:purchase_order_import.purchase_order_import_menu
+msgid "purchase import"
+msgstr ""
+
+#. module: purchase_order_import
+#: model:ir.model,name:purchase_order_import.model_purchase_order_import
+msgid "purchase order import"
+msgstr "Configuracion de Importacion de compras"
+
+#. module: purchase_order_import
+#: model:ir.model,name:purchase_order_import.model_purchase_order_import_config
+msgid "purchase order import config"
+msgstr "Configuracion de Importacion de compras"
+
+#. module: purchase_order_import
+#: model:ir.model.fields,field_description:purchase_order_import.field_purchase_order_import__start_line
+#: model:ir.model.fields,field_description:purchase_order_import.field_purchase_order_import_config__start_line
+msgid "start line"
+msgstr "Linea de inicio"
+
+#. module: purchase_order_import
+#: model_terms:ir.ui.view,arch_db:purchase_order_import.purchase_order_import_form
+msgid "test"
+msgstr "test"
+
+#. module: purchase_order_import
+#: model:ir.model.fields,field_description:purchase_order_import.field_purchase_order_import_config__tax_coefficient
+msgid "valor Iva"
+msgstr "Con IVA"
+
+#. module: purchase_order_import
+#: model:ir.model.fields.selection,name:purchase_order_import.selection__purchase_order_import_config__file_format__xls
+msgid "xls"
+msgstr "Excel"

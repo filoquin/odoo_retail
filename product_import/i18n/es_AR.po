@@ -1,0 +1,569 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* product_import
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0-20171009\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-14 11:07+0000\n"
+"PO-Revision-Date: 2019-10-14 08:11-0300\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_AR\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#. module: product_import
+#: code:addons/product_import/product_import.py:630
+#, python-format
+msgid ""
+"\n"
+"# Python code. Use:\n"
+"#  -  failed = True: specify that the value is not valid.\n"
+"# You can use the following:\n"
+"#  - re: regex Python library\n"
+"#  - date: date Python library\n"
+"#  - datetime: datetime Python library\n"
+"#  - relativedelta: relativedelta Python library\n"
+"#  - self: browse_record of the current document type\n"
+"#  - config_id: config_id res\n"
+"#  - row: row data\n"
+"#  - column: column number\n"
+"# Return is a float in variable return_value"
+msgstr ""
+"\n"
+"# Python code. Use:\n"
+"#  -  failed = True: specify that the value is not valid.\n"
+"# You can use the following:\n"
+"#  - re: regex Python library\n"
+"#  - date: date Python library\n"
+"#  - datetime: datetime Python library\n"
+"#  - relativedelta: relativedelta Python library\n"
+"#  - self: browse_record of the current document type\n"
+"#  - config_id: config_id res\n"
+"#  - row: row data\n"
+"#  - column: column number\n"
+"# Return is a float in variable return_value"
+
+#. module: product_import
+#: code:addons/product_import/product_import.py:698
+#, python-format
+msgid "'%s' is not a valid value for '%s'."
+msgstr "'%s' No es un valor valido para '%s'."
+
+#. module: product_import
+#: field:product.import,active:0 field:product.import.config,active:0
+msgid "Active"
+msgstr "Activo"
+
+#. module: product_import
+#: field:product.import.config,supplierinfo:0
+msgid "Add supplier info"
+msgstr "Agregar información del proveedor"
+
+#. module: product_import
+#: view:product.import:product_import.product_import_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: product_import
+#: field:product.import,config_id:0
+#: view:product.import.config:product_import.product_import_config_form
+#: view:product.import.config:product_import.product_import_config_tree
+#: field:product.import.config.column,config_id:0
+#: field:product.import.config.default_values,config_id:0
+#: field:product.import.field_values,import_id:0
+#: field:product.import.serialized_values,import_id:0
+msgid "Config"
+msgstr "Configuración"
+
+#. module: product_import
+#: view:product.import:product_import.product_import_form
+#: field:product.import,create_values_ids:0
+msgid "Create"
+msgstr "Crear"
+
+#. module: product_import
+#: field:product.import,created:0
+msgid "Create execute"
+msgstr "Realizar crear"
+
+#. module: product_import
+#: field:product.import,create_uid:0 field:product.import.config,create_uid:0
+#: field:product.import.config.column,create_uid:0
+#: field:product.import.config.default_values,create_uid:0
+#: field:product.import.config.field,create_uid:0
+#: field:product.import.config.sheet,create_uid:0
+#: field:product.import.field_values,create_uid:0
+#: field:product.import.preprocessed,create_uid:0
+#: field:product.import.serialized_values,create_uid:0
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: product_import
+#: field:product.import,create_date:0 field:product.import.config,create_date:0
+#: field:product.import.config.column,create_date:0
+#: field:product.import.config.default_values,create_date:0
+#: field:product.import.config.field,create_date:0
+#: field:product.import.config.sheet,create_date:0
+#: field:product.import.field_values,create_date:0
+#: field:product.import.preprocessed,create_date:0
+#: field:product.import.serialized_values,create_date:0
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: product_import
+#: field:product.import.serialized_values,data:0
+msgid "Data"
+msgstr ""
+"\n"
+"# Python code. Use:\n"
+"#  -  failed = True: specify that the value is not valid.\n"
+"# You can use the following:\n"
+"#  - re: regex Python library\n"
+"#  - date: date Python library\n"
+"#  - datetime: datetime Python library\n"
+"#  - relativedelta: relativedelta Python library\n"
+"#  - self: browse_record of the current document type\n"
+"#  - config_id: config_id res\n"
+"#  - row: row data\n"
+"#  - column: column number\n"
+"# Return is a float in variable return_value"
+
+#. module: product_import
+#: field:product.import.config,default_categ_id:0
+msgid "Default category"
+msgstr "Categoria"
+
+#. module: product_import
+#: view:product.import.config:product_import.product_import_config_form
+msgid "Default values"
+msgstr "Valor por defecto"
+
+#. module: product_import
+#: field:product.import,display_name:0
+#: field:product.import.config,display_name:0
+#: field:product.import.config.column,display_name:0
+#: field:product.import.config.default_values,display_name:0
+#: field:product.import.config.field,display_name:0
+#: field:product.import.config.sheet,display_name:0
+#: field:product.import.field_values,display_name:0
+#: field:product.import.preprocessed,display_name:0
+#: field:product.import.serialized_values,display_name:0
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: product_import
+#: view:product.import:product_import.product_import_form
+msgid "Done"
+msgstr "Listo"
+
+#. module: product_import
+#: field:product.import,error:0
+msgid "Error"
+msgstr "Error"
+
+#. module: product_import
+#: code:addons/product_import/product_import.py:693
+#, python-format
+msgid ""
+"Error when evaluating %s. Please check validation code.\n"
+"Error:\n"
+"%s"
+msgstr ""
+"Error en la evaluacion de  %s. verificar el codigo de .\n"
+"Error:\n"
+"%s"
+
+#. module: product_import
+#: field:product.import.config.column,field_def_id:0
+#: field:product.import.config.default_values,field_id:0
+#: field:product.import.config.field,field_id:0
+#: field:product.import.field_values,field_id:0
+msgid "Field"
+msgstr "Campo"
+
+#. module: product_import
+#: view:product.import.config:product_import.product_import_config_form
+#: field:product.import.config,field_ids:0
+msgid "Fields"
+msgstr "Campos"
+
+#. module: product_import
+#: field:product.import,file_ids:0
+msgid "File"
+msgstr "Archivo"
+
+#. module: product_import
+#: field:product.import.preprocessed,python_code:0
+msgid "Function"
+msgstr "Función"
+
+#. module: product_import
+#: field:product.import,id:0 field:product.import.config,id:0
+#: field:product.import.config.column,id:0
+#: field:product.import.config.default_values,id:0
+#: field:product.import.config.field,id:0
+#: field:product.import.config.sheet,id:0
+#: field:product.import.field_values,id:0
+#: field:product.import.preprocessed,id:0
+#: field:product.import.serialized_values,id:0
+msgid "ID"
+msgstr "ID (identificación)"
+
+#. module: product_import
+#: model:ir.actions.act_window,name:product_import.action_product_import_config
+#: model:ir.ui.menu,name:product_import.product_import_config_menu
+#: view:product.import.config:product_import.product_import_config_form
+msgid "Import"
+msgstr "Importar"
+
+#. module: product_import
+#: code:addons/product_import/product_import.py:150
+#, python-format
+msgid "Import "
+msgstr "Importar"
+
+#. module: product_import
+#: code:addons/product_import/product_import.py:608
+#, python-format
+msgid "Import '%s'"
+msgstr "Importar '%s'"
+
+#. module: product_import
+#: field:product.import.config,import_ids:0
+msgid "Imports"
+msgstr "Importaciones"
+
+#. module: product_import
+#: view:product.import:product_import.product_import_form
+msgid "Insert new"
+msgstr "Agregar nuevos"
+
+#. module: product_import
+#: field:product.import,__last_update:0
+#: field:product.import.config,__last_update:0
+#: field:product.import.config.column,__last_update:0
+#: field:product.import.config.default_values,__last_update:0
+#: field:product.import.config.field,__last_update:0
+#: field:product.import.config.sheet,__last_update:0
+#: field:product.import.field_values,__last_update:0
+#: field:product.import.preprocessed,__last_update:0
+#: field:product.import.serialized_values,__last_update:0
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: product_import
+#: field:product.import,write_uid:0 field:product.import.config,write_uid:0
+#: field:product.import.config.column,write_uid:0
+#: field:product.import.config.default_values,write_uid:0
+#: field:product.import.config.field,write_uid:0
+#: field:product.import.config.sheet,write_uid:0
+#: field:product.import.field_values,write_uid:0
+#: field:product.import.preprocessed,write_uid:0
+#: field:product.import.serialized_values,write_uid:0
+msgid "Last Updated by"
+msgstr "Última actualización de"
+
+#. module: product_import
+#: field:product.import,write_date:0 field:product.import.config,write_date:0
+#: field:product.import.config.column,write_date:0
+#: field:product.import.config.default_values,write_date:0
+#: field:product.import.config.field,write_date:0
+#: field:product.import.config.sheet,write_date:0
+#: field:product.import.field_values,write_date:0
+#: field:product.import.preprocessed,write_date:0
+#: field:product.import.serialized_values,write_date:0
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: product_import
+#: field:product.import.config,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: product_import
+#: view:product.import:product_import.product_import_create_form
+msgid "New"
+msgstr "Nuevo"
+
+#. module: product_import
+#: view:product.import.config:product_import.product_import_config_form
+msgid "Open"
+msgstr "Abierto"
+
+#. module: product_import
+#: view:product.import:product_import.product_import_form
+msgid "Process"
+msgstr "Procesar"
+
+#. module: product_import
+#: view:product.import:product_import.product_import_form
+msgid "Productos"
+msgstr "Productos"
+
+#. module: product_import
+#: field:product.import,product_ids:0
+msgid "Products"
+msgstr "Productos"
+
+#. module: product_import
+#: field:product.import.config.column,required:0
+msgid "Required"
+msgstr "Obligatorio"
+
+#. module: product_import
+#: field:product.import,serialized_values_ids:0
+msgid "Serialized"
+msgstr "Serie"
+
+#. module: product_import
+#: field:product.import.config.sheet,name:0
+msgid "Sheet"
+msgstr "Hoja"
+
+#. module: product_import
+#: field:product.import.config,sheet_ids:0
+msgid "Sheet ids"
+msgstr "Hojas"
+
+#. module: product_import
+#: field:product.import.config,partner_id:0
+msgid "Supplier"
+msgstr "Proveedor"
+
+#. module: product_import
+#: view:product.import:product_import.product_import_form
+#: view:product.import:product_import.product_import_update_form
+#: field:product.import,write_values_ids:0
+msgid "Update"
+msgstr "Actualizar"
+
+#. module: product_import
+#: field:product.import,updated:0
+msgid "Update execute"
+msgstr "Iniciar Actualización"
+
+#. module: product_import
+#: view:product.import:product_import.product_import_form
+msgid "Update product & supplier"
+msgstr "Actualizar  productos y prov"
+
+#. module: product_import
+#: view:product.import:product_import.product_import_form
+msgid "Update products"
+msgstr "Actualizar solo productos"
+
+#. module: product_import
+#: field:product.import.field_values,parsed_value:0
+msgid "Value"
+msgstr "valor"
+
+#. module: product_import
+#: selection:product.import,state:0
+msgid "cancel"
+msgstr "cancelado"
+
+#. module: product_import
+#: field:product.import.config.column,column:0
+msgid "column"
+msgstr "Columna"
+
+#. module: product_import
+#: view:product.import.config:product_import.product_import_config_form
+#: view:product.import.config:product_import.product_import_config_search
+msgid "config"
+msgstr "configuración"
+
+#. module: product_import
+#: field:product.import.config,context:0
+msgid "context"
+msgstr "Contexto"
+
+#. module: product_import
+#: selection:product.import.field_values,event:0
+msgid "create"
+msgstr "Crear"
+
+#. module: product_import
+#: selection:product.import,state:0
+msgid "created"
+msgstr "creado"
+
+#. module: product_import
+#: selection:product.import.config,file_format:0
+msgid "csv"
+msgstr "CSV"
+
+#. module: product_import
+#: field:product.import.config,csv_delimiter:0
+msgid "csv delimiter"
+msgstr "Delimitador csv"
+
+#. module: product_import
+#: field:product.import.config,csv_quotechar:0
+msgid "csv quotechar"
+msgstr "Comilla CSV"
+
+#. module: product_import
+#: field:product.import.config,default_value_ids:0
+msgid "default values"
+msgstr "Valores por defecto"
+
+#. module: product_import
+#: view:product.import:product_import.product_import_create_form
+#: view:product.import:product_import.product_import_form
+#: view:product.import:product_import.product_import_update_form
+#: view:product.import.config.field:product_import.product_import_config_field_form
+#: view:product.import.preprocessed:product_import.product_import_preprocessed_form
+msgid "description"
+msgstr "descripción"
+
+#. module: product_import
+#: selection:product.import,state:0
+msgid "done"
+msgstr "Listo"
+
+#. module: product_import
+#: selection:product.import,state:0
+msgid "draft"
+msgstr "Borrador"
+
+#. module: product_import
+#: field:product.import.field_values,event:0
+msgid "event"
+msgstr "Evento"
+
+#. module: product_import
+#: field:product.import.config,file_format:0
+msgid "file format"
+msgstr "Formato de archivo"
+
+#. module: product_import
+#: field:product.import.config.column,match:0
+msgid "match"
+msgstr "Coincidir"
+
+#. module: product_import
+#: field:product.import.config,match_supplier:0
+msgid "match supplier"
+msgstr "Coincidir con proveedor"
+
+#. module: product_import
+#: field:product.import.config.field,name:0
+#: field:product.import.preprocessed,name:0
+msgid "name"
+msgstr "Nombre"
+
+#. module: product_import
+#: field:product.import.config.column,preprocessed_id:0
+#: field:product.import.config.field,preprocessed_id:0
+msgid "preproces"
+msgstr "Pre-procesar"
+
+#. module: product_import
+#: view:product.product:product_import.product_import_tree
+msgid "prices"
+msgstr "Precios"
+
+#. module: product_import
+#: selection:product.import,state:0
+msgid "process"
+msgstr "Procesar"
+
+#. module: product_import
+#: field:product.import.field_values,product_id:0
+#: field:product.import.serialized_values,product_id:0
+msgid "product"
+msgstr "Producto"
+
+#. module: product_import
+#: model:ir.model,name:product_import.model_product_import
+msgid "product import"
+msgstr "Importación de productos"
+
+#. module: product_import
+#: model:ir.model,name:product_import.model_product_import_config
+msgid "product import config"
+msgstr "Configuración de la impotación"
+
+#. module: product_import
+#: model:ir.model,name:product_import.model_product_import_config_default_values
+msgid "product import default_values"
+msgstr "Valores por defecto"
+
+#. module: product_import
+#: model:ir.model,name:product_import.model_product_import_field_values
+msgid "product import field values"
+msgstr "Valores de los campos"
+
+#. module: product_import
+#: model:ir.model,name:product_import.model_product_import_config_column
+#: model:ir.model,name:product_import.model_product_import_config_field
+msgid "product import fields"
+msgstr "Campos"
+
+#. module: product_import
+#: model:ir.model,name:product_import.model_product_import_preprocessed
+msgid "product import render function"
+msgstr "Función de parceo"
+
+#. module: product_import
+#: model:ir.model,name:product_import.model_product_import_config_sheet
+msgid "product import sheet"
+msgstr "Hoja"
+
+#. module: product_import
+#: view:product.import:product_import.product_import_form
+msgid "restart"
+msgstr "Reiniciar"
+
+#. module: product_import
+#: field:product.import.config,start_line:0
+msgid "start line"
+msgstr "Linea de inicio "
+
+#. module: product_import
+#: field:product.import,state:0
+msgid "state"
+msgstr "Estado"
+
+#. module: product_import
+#: field:product.import.field_values,unic:0
+#: field:product.import.serialized_values,unic:0
+msgid "unic"
+msgstr "Unico"
+
+#. module: product_import
+#: selection:product.import,state:0
+msgid "updated"
+msgstr "Actualizados"
+
+#. module: product_import
+#: field:product.import.config.default_values,field_value:0
+msgid "value"
+msgstr "Valor"
+
+#. module: product_import
+#: view:product.import:product_import.product_import_form
+msgid "view products"
+msgstr "Ver productos"
+
+#. module: product_import
+#: selection:product.import.field_values,event:0
+msgid "write"
+msgstr "Actualizar"
+
+#. module: product_import
+#: selection:product.import.config,file_format:0
+msgid "xls"
+msgstr "Excel"
+
+#. module: product_import
+#: selection:product.import.config,file_format:0
+msgid "xml"
+msgstr "XML"

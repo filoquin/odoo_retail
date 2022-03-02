@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+		<record id="product_import_tree" model="ir.ui.view">
+			<field name="name">product.import.tree</field>
+			<field name="model">product.product</field>
+			<field name="priority">999</field>
+			<field name="arch" type="xml">
+				<tree editable="top" string="prices">
+					<field name="default_code"/>
+					<field name="name"/>
+					<field name="categ_id"/>
+					<field name="standard_price"/>
+					<field name="list_price" readonly="True"/>
+				</tree>
+			</field>
+		</record>
+</odoo>

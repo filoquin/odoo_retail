@@ -1,0 +1,3 @@
+"id","name","model_id/id","group_id/id","perm_read","perm_write","perm_create","perm_unlink"
+"model_purchase_order_import_config","purchase.order.import","purchase_order_import.model_purchase_order_import_config","purchase.group_purchase_manager","True","True","True","True"
+"model_purchase_order_import_config","purchase.order.import_config","purchase_order_import.model_purchase_order_import_config","purchase.group_purchase_manager","True","True","True","True"
