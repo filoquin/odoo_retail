@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_product_replenishment_cost_markup_product_replenishment_cost_markup,product_replenishment_cost_markup.product_replenishment_cost_markup,model_product_replenishment_cost_markup_product_replenishment_cost_markup,base.group_user,1,1,1,1

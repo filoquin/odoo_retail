@@ -1,0 +1,59 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* product_replenishment_cost_auto
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0-20210904\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-02-12 03:03+0000\n"
+"PO-Revision-Date: 2022-02-12 00:04-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_AR\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#. module: product_replenishment_cost_auto
+#: code:addons/product_replenishment_cost_auto/models/replenishment_cost_rule.py:0
+#, python-format
+msgid "All"
+msgstr "Todos"
+
+#. module: product_replenishment_cost_auto
+#: model:ir.model.fields,field_description:product_replenishment_cost_auto.field_product_replenishment_cost_rule__categ_id
+msgid "Category"
+msgstr "Categoría"
+
+#. module: product_replenishment_cost_auto
+#: model:ir.model,name:product_replenishment_cost_auto.model_product_template
+msgid "Product Template"
+msgstr "Plantilla de producto"
+
+#. module: product_replenishment_cost_auto
+#: model_terms:ir.ui.view,arch_db:product_replenishment_cost_auto.product_replenshiment_cost_rule_form
+msgid "Set"
+msgstr ""
+
+#. module: product_replenishment_cost_auto
+#: model:ir.model.fields,field_description:product_replenishment_cost_auto.field_product_replenishment_cost_rule__discount_total
+msgid "discount total"
+msgstr "Descuento total"
+
+#. module: product_replenishment_cost_auto
+#: model:ir.model,name:product_replenishment_cost_auto.model_product_replenishment_cost_rule
+msgid "product.replenishment_cost.rule"
+msgstr ""
+
+#. module: product_replenishment_cost_auto
+#: model:ir.model.fields,field_description:product_replenishment_cost_auto.field_product_replenishment_cost_rule__sequence
+msgid "sequence"
+msgstr "sequencia"
+
+#. module: product_replenishment_cost_auto
+#: model:ir.model.fields,field_description:product_replenishment_cost_auto.field_product_replenishment_cost_rule__supplier_id
+msgid "supplier"
+msgstr "Proveedor"

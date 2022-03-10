@@ -1,0 +1,60 @@
+<odoo>
+    <data>
+        <record id="product_template_form_view_form" model="ir.ui.view">
+            <field name="name">product_template_form_view.form</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_form_view"/>
+            <field name="arch" type="xml">
+                <field name="list_price" position="after">
+                    <field class="oe_inline" name="markup_price" options="{'currency_field': 'currency_id', 'field_digits': True}" widget="monetary"/>
+                </field>
+                <field name="list_price" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </field>
+            </field>
+        </record>
+        <record id="product_template_form_view" model="ir.ui.view">
+            <field name="name">product.cost.currency.form</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product_replenishment_cost.product_template_form_view"/>
+            <field name="arch" type="xml">
+                <field name="replenishment_cost" position="before">
+                    <field name="markup"/>
+                </field>
+            </field>
+        </record>
+        <record id="product_replenshiment_cost_rule_tree" model="ir.ui.view">
+            <field name="name">product.replenishment_cost.rule.tree</field>
+            <field name="model">product.replenishment_cost.rule</field>
+            <field name="inherit_id" ref="product_replenishment_cost.product_replenshiment_cost_rule_tree"/>
+            <field name="arch" type="xml">
+                <field name="name" position="after">
+                    <field name="markup"/>
+                </field>
+            </field>
+        </record>
+        <record id="product_replenshiment_cost_rule_filter" model="ir.ui.view">
+            <field name="name">product.replenishment_cost.rule.filter</field>
+            <field name="model">product.replenishment_cost.rule</field>
+            <field name="inherit_id" ref="product_replenishment_cost.product_replenshiment_cost_rule_filter"/>
+            <field name="arch" type="xml">
+                <field name="name" position="after">
+                    <field name="markup"/>
+                </field>
+            </field>
+        </record>
+        <record id="product_replenshiment_cost_rule_form" model="ir.ui.view">
+            <field name="name">product.replenishment_cost.rule.form</field>
+            <field name="model">product.replenishment_cost.rule</field>
+            <field name="inherit_id" ref="product_replenishment_cost.product_replenshiment_cost_rule_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="before">
+                    <group col="4">
+                        <field name="markup"/>
+                        <button name="action_update_markup" string="Update" type="object" />
+                    </group>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

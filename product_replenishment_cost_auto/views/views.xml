@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="product_replenishment_cost_auto.list">
+      <field name="name">product_replenishment_cost_auto list</field>
+      <field name="model">product_replenishment_cost_auto.product_replenishment_cost_auto</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="product_replenishment_cost_auto.action_window">
+      <field name="name">product_replenishment_cost_auto window</field>
+      <field name="res_model">product_replenishment_cost_auto.product_replenishment_cost_auto</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="product_replenishment_cost_auto.action_server">
+      <field name="name">product_replenishment_cost_auto server</field>
+      <field name="model_id" ref="model_product_replenishment_cost_auto_product_replenishment_cost_auto"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="product_replenishment_cost_auto" id="product_replenishment_cost_auto.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="product_replenishment_cost_auto.menu_1" parent="product_replenishment_cost_auto.menu_root"/>
+    <menuitem name="Menu 2" id="product_replenishment_cost_auto.menu_2" parent="product_replenishment_cost_auto.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="product_replenishment_cost_auto.menu_1_list" parent="product_replenishment_cost_auto.menu_1"
+              action="product_replenishment_cost_auto.action_window"/>
+    <menuitem name="Server to list" id="product_replenishment_cost_auto" parent="product_replenishment_cost_auto.menu_2"
+              action="product_replenishment_cost_auto.action_server"/>
+-->
+  </data>
+</odoo>
