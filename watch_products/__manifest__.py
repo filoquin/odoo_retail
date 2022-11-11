@@ -27,4 +27,5 @@ Permite generar codigos de productos para estanterias por equipo de ventas.
 
 
     'auto_install': False,
+    'installable': False,
 }

@@ -23,4 +23,5 @@
         'views/quant_tag_print.xml',
         'views/product_tag_print.xml',
     ],
+    'installable': False,
 }
