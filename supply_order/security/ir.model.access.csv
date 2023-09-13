@@ -1,0 +1,6 @@
+"id","name","model_id/id","group_id/id","perm_read","perm_write","perm_create","perm_unlink"
+"stock_supply_request","stock.supply.request","supply_order.model_stock_supply_request","stock.group_stock_manager","True","True","True","True"
+"stock_supply_calendar","stock.supply.calendar","supply_order.model_stock_supply_calendar","stock.group_stock_manager","True","True","True","True"
+"stock_supply_request_line","stock.supply.request.line","supply_order.model_stock_supply_request_line","stock.group_stock_manager","True","True","True","True"
+"stock_supply_rule","stock.supply.rule","supply_order.model_stock_supply_rule","stock.group_stock_manager","True","True","True","True"
+"stock_supply_wizard","stock.supply.wizard","supply_order.model_stock_supply_wizard","stock.group_stock_manager","True","True","True","True"

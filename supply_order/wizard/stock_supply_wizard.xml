@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="stock_supply_wizard_view_form" model="ir.ui.view">
+        <field name="name">stock_supply_wizard.view.form</field>
+        <field name="model">stock.supply.wizard</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group>
+                        <field name="warehouse_id" invisible="True"/>
+                        <field name="direction" invisible="True"/>
+                        <field name="rule_id" attrs="{'invisible':[('direction', '=', 'incoming')], 'required':True}" domain="[('orig_warehouse_id','=',warehouse_id)]"/>
+                        <field name="rule_id" attrs="{'invisible':[('direction', '=', 'outgoing')], 'required':True}" domain="[('warehouse_id','=',warehouse_id)]"/>
+                        <field name="calendar_id" domain="[('rule_id','=',rule_id)]" attrs="{'required':True}"/>
+                        <field name="product_ids" invisible="True" widget="x2many_counter"/>
+                        <field name="filter_qty_available"/>
+
+                    </group>
+                </sheet>
+                <footer>
+                <button name="action_create_request" type="object" string="create"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+    <record id="action_stock_picking_type_supply_wizard" model="ir.actions.server">
+        <field name="name">new Supply request</field>
+        <field name="model_id" ref="supply_order.model_stock_supply_wizard"/>
+        <field name="binding_model_id" ref="stock.model_stock_picking_type"/>
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">
+            action = model.open_wizard()
+        </field>
+    </record>
+    <record id="action_supply_wizard_from_list" model="ir.actions.server">
+        <field name="name">new Supply request</field>
+        <field name="model_id" ref="supply_order.model_stock_supply_wizard"/>
+        <field name="binding_model_id" ref="stock.model_stock_picking"/>
+        <field name="state">code</field>
+        <field name="code">
+            action = model.open_wizard()
+        </field>
+    </record>
+
+</odoo>
