@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="stock_picking_type_kanban" model="ir.ui.view">
+        <field name="name">stock.picking.type.kanban</field>
+        <field name="model">stock.picking.type</field>
+        <field name="inherit_id" ref="stock.stock_picking_type_kanban"></field>
+        <field name="arch" type="xml">
+            <button  name="get_action_picking_tree_ready" position="after">
+                <button t-if="record.code.raw_value =='incoming'" class="btn btn-secondary" name="new_supply_request" string="request" type="object">new supply</button>
+            </button>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+		<record id="stock_supply_rule_tree" model="ir.ui.view">
+			<field name="name">stock_supply_rule.tree</field>
+			<field name="model">stock.supply.rule</field>
+			<field name="arch" type="xml">
+				<tree string="description">
+					<field name="orig_warehouse_id"/>
+					<field name="warehouse_id"/>
+					<field name="recept_day"/>
+					<field name="recept_hour" widget="float_time"/>
+				</tree>
+			</field>
+		</record>
+		<record id="stock_supply_rule_form" model="ir.ui.view">
+			<field name="name">stock_supply_rule.form</field>
+			<field name="model">stock.supply.rule</field>
+			<field name="arch" type="xml">
+				<form string="description">
+					<field name="active" invisible="True"/>
+					<field name="company_id" invisible="True"/>
+					<header>
+						<button name="make_calendar" string="Make calendar" type="object"/>
+					</header>
+					<sheet>
+						<group col="4">
+							<field name="orig_warehouse_id"/>
+							<field name="warehouse_id"/>
+						</group>
+						<group col="2" >
+							<field name="domain" string="Domain"  widget="domain" options="{'model':'product.product'}"/>
+							<field name="route_ids" widget="many2many_tags"/>
+						</group>
+						<group col="2" string="Time">
+							<label for="request_day">Limite de pedido</label>
+							<span col="2">
+								<field name="request_day"/>
+								<field name="request_hour" widget="float_time"/>
+							</span>
+							<label for="preparation_day">Limite preparacion</label>
+							<span col="2">
+								<field name="preparation_day"/>
+								<field name="preparation_hour" widget="float_time"/>
+							</span>
+							<label for="recept_day">Recepcion</label>
+							<span col="2">
+								<field name="recept_day"/>
+								<field name="recept_hour" widget="float_time"/>
+							</span>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+		<record id="stock_supply_rule_search" model="ir.ui.view">
+			<field name="name">stock_supply_rule.search</field>
+			<field name="model">stock.supply.rule</field>
+			<field name="arch" type="xml">
+				<search string="String">
+					<field name="warehouse_id"/>
+					<field name="active"/>
+				</search>
+			</field>
+		</record>
+		<record id="action_stock_supply_rule" model="ir.actions.act_window">
+			<field name="name">Supply Rule</field>
+			<field name="res_model">stock.supply.rule</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+		<menuitem action="action_stock_supply_rule" id="stock_supply_rule_menu" name="Supply" parent="stock.menu_stock_config_settings"/>
+		<menuitem action="action_stock_supply_rule" id="stock_supply_rule_rule_menu" name="Supply Rule" parent="stock_supply_rule_menu"/>
+	</data>
+</odoo>
