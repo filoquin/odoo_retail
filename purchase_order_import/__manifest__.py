@@ -21,4 +21,5 @@
         'security/ir.model.access.csv',
         'views/purchase_order_import.xml',
     ],
+    'installable': False,
 }

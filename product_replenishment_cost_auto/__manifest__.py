@@ -22,5 +22,5 @@
         # 'security/ir.model.access.csv',
         'views/replenshiment_cost_rule.xml',
     ],
-
+    'installable': False,
 }

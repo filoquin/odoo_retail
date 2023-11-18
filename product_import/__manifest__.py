@@ -31,7 +31,7 @@ Add configurable templates for import products from  files    """,
     "author": "Filoquin",
     "website": "http://sipecu.com.ar",
     "depends": ["product", "web_widget_x2many_2d_matrix", "sale", "queue_job"],
-    "installable": True,
+    'installable': False,
     'external_dependencies':{
             'python': ['xlrd'],
         },    
