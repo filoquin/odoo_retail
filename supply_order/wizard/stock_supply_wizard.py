@@ -29,7 +29,7 @@ class StockSupplyWizard(models.Model):
             rec['warehouse_id'] = picking_type.warehouse_id.id
 
         return rec
-    
+
     name = fields.Char()
     warehouse_id = fields.Many2one('stock.warehouse')
     direction = fields.Selection([('incoming', 'Receipt'),('outgoing','Delivery')])
@@ -64,7 +64,6 @@ class StockSupplyWizard(models.Model):
 
 
     def action_open_wizard(self):
-        
         active_ids = self.env.context.get('active_ids')
         if not active_ids:
             return ''

@@ -42,6 +42,27 @@ class ProductProduct(models.Model):
         compute="_compute_supply_qty",
         digits='Product Unit of Measure',
     )
+    my_virtual_available = fields.Float(
+        compute="_compute_my_quantities",
+        string="My Stock",
+    )
+
+
+    def _compute_my_quantities(self):
+        request = self._context.get('request', False)
+        products =  self.env['product.product']
+        if request:
+            request_id = self.env['stock.supply.request'].browse(request)
+            products = self.with_context(warehouse=request_id.calendar_id.orig_warehouse_id.id).filtered(lambda p: p.type != 'service')
+            res = products._compute_quantities_dict(self._context.get('lot_id'), self._context.get('owner_id'), self._context.get('package_id'), self._context.get('from_date'), self._context.get('to_date'))
+            for product in products:
+                product.my_virtual_available = res[product.id]['virtual_available']
+        # Services need to be set with 0.0 for all quantities
+        services = self - products
+        services.my_virtual_available = 0.0
+
+
+
 
     def _compute_supply_qty(self):
         request = self._context.get('request', False)
@@ -57,6 +78,7 @@ class ProductProduct(models.Model):
 
     def add_to_request(self, qty=1):
         request = self._context.get('request', False)
+        qty = self._context.get('factor', qty)
         if request:
             request_id = self.env['stock.supply.request'].browse(request)
             line = request_id.line_ids.filtered(
@@ -73,6 +95,8 @@ class ProductProduct(models.Model):
 
     def drop_form_request(self, qty=1):
         request = self._context.get('request', False)
+        qty = self._context.get('factor', qty)
+
         if request:
             request_id = self.env['stock.supply.request'].browse(request)
             line = request_id.line_ids.filtered(

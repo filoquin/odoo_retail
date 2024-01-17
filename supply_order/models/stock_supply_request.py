@@ -61,9 +61,8 @@ class StockSupplyRequest(models.Model):
         with_procurement = self.filtered('procurement_group_id')
         for record in with_procurement:
             record.request_picking_ids = self.env['stock.picking'].search([('group_id', '=', record.procurement_group_id.id)])
-            
         (self - with_procurement).request_picking_ids = False
-        
+
     def action_send(self):
         now = datetime.now()
         request_limit = fields.Datetime.from_string(
@@ -83,7 +82,7 @@ class StockSupplyRequest(models.Model):
         domain = safe_eval(self.rule_id.domain or '[]')
         if self.filter_qty_available:
             domain += [('qty_available', '>', 0)]
-        product_ids = self.env['product.product'].with_context({'warehouse': self.calendar_id.orig_warehouse_id}).search(domain)
+        product_ids = self.env['product.product'].with_context({'warehouse': self.calendar_id.orig_warehouse_id.id}).search(domain)
 
         view = {
             'name': self.calendar_id.display_name,
@@ -138,13 +137,11 @@ class StockSupplyRequest(models.Model):
                 except UserError as error:
                     raise UserError(error)
             request_id.state = 'queued'
-            scheduler = self.env['stock.scheduler.compute'].create({})
-            scheduler.with_context(only_procurement=values['group_id'].id).procure_calculation()
 
     def _prepare_run_values(self):
             replenishment = self.env['procurement.group'].with_context(force_company=self.calendar_id.company_id.id).create({
                 'partner_id': self.user_id.partner_id.id,
-            }) 
+            })
 
             values = {
                 'warehouse_id': self.calendar_id.warehouse_id,
@@ -184,7 +181,7 @@ class StockSupplyRequestLine(models.Model):
     )
     my_virtual_available = fields.Float(
         compute="_get_virtual_available",
-        string="my Stock",
+        string="My Stock",
         store=True,
     )
     central_virtual_available = fields.Float(

@@ -25,6 +25,7 @@
           <field name="id"/>
           <field name="lst_price"/>
           <field name="virtual_available"/>
+          <field name="my_virtual_available"/>
           <field name="categ_id"/>
           <field name="supply_qty"/>
           <field name="packaging_ids"/>
@@ -47,22 +48,28 @@
                   </h3>
                   <ul>
                     <li>
-                      <strong>Price: 
-                        
+                      <strong>Price:
                         <field name="lst_price"/></strong>
                     </li>
                     <li>
-                      <strong>Available: 
-                        
+                      <strong>Available:
                         <field name="virtual_available"/></strong>
                     </li>
+                    <li>
+                      <strong>My Available:
+                        <field name="my_virtual_available"/></strong>
+                    </li>
+
                     <li>
                       <field name="categ_id"/>
                     </li>
                     <li>
+
                       <button class="btn btn-secondary" name="drop_form_request" string="Drop" type="object">-2</button>
                       <button class="btn btn-secondary" name="add_to_request" string="Add" type="object">+1</button>
-                      <button t-if="record.packaging_ids" class="btn btn-primary" name="popup_request" string="mas" type="object">+/-</button>                    </li>
+                      <button class="btn btn-secondary" name="add_to_request" context="{'factor':5}"  string="Add 5" type="object">+5</button>
+                      <button t-if="record.packaging_ids.raw_value" class="btn btn-primary" name="popup_request" string="mas" type="object">+/-</button>
+                    </li>
                   </ul>
                   <div name="tags"/>
                 </div>
@@ -104,7 +111,6 @@
       <field name="view_id" ref="product_supply_view_kanban"></field>
       <field name="search_view_id" ref="product_supply_view_search"></field>
       <field name="domain">[]</field>
-                  
 
     </record>
   </data>

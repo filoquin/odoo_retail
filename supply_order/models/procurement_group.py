@@ -10,4 +10,4 @@ class ProcurementGroup(models.Model):
         if procurement_id:
             domain += [('id', '=', procurement_id)]
         return domain
-    
+
