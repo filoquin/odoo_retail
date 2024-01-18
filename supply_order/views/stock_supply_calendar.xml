@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+		<record id="stock_supply_calendar_calendar" model="ir.ui.view">
+			<field name="name">stock_supply_calendar.calendar</field>
+			<field name="model">stock.supply.calendar</field>
+			<field name="arch" type="xml">
+				<calendar color="warehouse_id" date_start="request_deadline" quick_add="False" string="Supplys">
+					<field name="name"/>
+					<field name="warehouse_id"/>
+				</calendar>
+			</field>
+		</record>
+		<record id="stock_supply_calendar_tree" model="ir.ui.view">
+			<field name="name">stock_supply_calendar.tree</field>
+			<field name="model">stock.supply.calendar</field>
+			<field name="arch" type="xml">
+				<tree string="description">
+					<field name="display_name"/>
+					<field name="deadline"/>
+					<field name="request_deadline"/>
+					<field name="preparation_deadline"/>
+				</tree>
+			</field>
+		</record>
+		<record id="stock_supply_calendar_form" model="ir.ui.view">
+			<field name="name">stock_supply_calendar.form</field>
+			<field name="model">stock.supply.calendar</field>
+			<field name="arch" type="xml">
+
+				<form string="calendar">
+					<field name="company_id" invisible="True"/>
+					<header>
+						<button name="action_new_request" string="crear nuevo abastecimiento" type="object"/>
+					</header>
+					<sheet>
+						<h1>
+							<field name="name"/>
+						</h1>
+						<group col="4">
+							<field attrs="{'readonly':True}" name="deadline"/>
+							<field attrs="{'readonly':True}" name="request_deadline"/>
+							<field attrs="{'readonly':True}" name="preparation_deadline"/>
+							<field name="warehouse_id"/>
+						</group>
+						<notebook>
+							<page string="request">
+								<group>
+									<span>
+										<field name="request_ids">
+											<tree>
+												<field name="send_date"/>
+												<field name="user_id"/>
+												<field name="state"/>
+												<button name="action_done" states="send" string="process" type="object"/>
+											</tree>
+										</field>
+									</span>
+								</group>
+							</page>
+							<page string="Config">
+								<group>
+									<field attrs="{'hidden':True}" name="id"/>
+									<field attrs="{'readonly':[('id','=',False)]}" name="orig_warehouse_id"/>
+									<field attrs="{'readonly':[('id','=',False)]}" name="warehouse_id"/>
+				                    <field name="route_ids" widget="many2many_tags"/>
+
+								</group>
+							</page>
+						</notebook>
+					</sheet>
+				</form>
+			</field>
+		</record>
+		<record id="action_stock_supply_calendar" model="ir.actions.act_window">
+			<field name="name">Supply calendar</field>
+			<field name="res_model">stock.supply.calendar</field>
+			<field name="view_mode">calendar,tree,form</field>
+		</record>		
+		<menuitem action="action_stock_supply_calendar" id="stock_supply_calendar_menu" name="Supply Calendar" parent="stock_supply_rule_menu"/>
+	</data>
+</odoo>

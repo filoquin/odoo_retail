@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="price_checker_view_form" model="ir.ui.view">
+        <field name="name">price_checker.view.form</field>
+        <field name="model">price.checker</field>
+        <field name="arch" type="xml">
+            <form string="Prices" create="False" edit="False" options="{'hide_header': True}">
+                        <header></header>
+                        <group >
+                            <field name="_barcode_scanned" widget="sale_barcode_handler" invisible="1"/>
+                            <field name="product_id" invisible="True"/>
+                        </group>
+                        <group name="prices" >
+                            <div colspan="2" style="font-size:200px;text-align:center;"><field name="product_price" readonly="True"/></div>
+                            <h1 style="font-size:30px;text-align:center;"><field name="product_name"  readonly="True"/></h1>
+                        </group>
+            </form>
+        </field>
+    </record>
+    <record id="price_checker_action" model="ir.actions.act_window">
+        <field name="name">Price check</field>
+        <field name="res_model">price.checker</field>
+        <field name="view_mode">form</field>
+        <field name="domain">[]</field>
+        <field name="context">{'edit': False,'create': False}</field>
+
+    </record>
+    <menuitem
+        id="price_checker_menu"
+        name="price_checker"
+        action="price_checker_action"
+        sequence="10"/>
+</odoo>

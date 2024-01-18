@@ -1,0 +1,770 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* supply_order
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-30 13:41+0000\n"
+"PO-Revision-Date: 2023-09-30 13:41+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_rule__active
+msgid "Active"
+msgstr ""
+
+#. module: supply_order
+#: model_terms:ir.ui.view,arch_db:supply_order.stock_supply_request_view_search
+msgid "Actives"
+msgstr ""
+
+#. module: supply_order
+#: model_terms:ir.ui.view,arch_db:supply_order.product_packaging_pop_view_tree
+#: model_terms:ir.ui.view,arch_db:supply_order.product_supply_view_kanban
+msgid "Add"
+msgstr "Agregar"
+
+#. module: supply_order
+#: model:ir.model.fields,help:supply_order.field_stock_supply_calendar__route_ids
+#: model:ir.model.fields,help:supply_order.field_stock_supply_rule__route_ids
+msgid ""
+"Apply specific route(s) for the replenishment instead of product's default "
+"routes."
+msgstr "Rutas para el Abastecimiento"
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: supply_order
+#: model_terms:ir.ui.view,arch_db:supply_order.product_supply_view_search
+msgid "Attributes"
+msgstr ""
+
+#. module: supply_order
+#: model_terms:ir.ui.view,arch_db:supply_order.product_supply_view_search
+msgid "Available Products"
+msgstr "Productos diponibles"
+
+#. module: supply_order
+#: model_terms:ir.ui.view,arch_db:supply_order.product_supply_view_kanban
+msgid "Available:"
+msgstr "Disponible"
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request__calendar_id
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_wizard__calendar_id
+msgid "Calendar"
+msgstr "Agenda de Abastecimiento"
+
+#. module: supply_order
+#: model_terms:ir.ui.view,arch_db:supply_order.product_supply_view_search
+msgid "Can be Purchased"
+msgstr ""
+
+#. module: supply_order
+#: model_terms:ir.ui.view,arch_db:supply_order.product_supply_view_search
+msgid "Can be Sold"
+msgstr ""
+
+#. module: supply_order
+#: model:ir.model.fields.selection,name:supply_order.selection__stock_supply_request__state__cancel
+#: model_terms:ir.ui.view,arch_db:supply_order.stock_supply_request_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request_line__categ_id
+msgid "Category"
+msgstr ""
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_calendar__company_id
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_rule__company_id
+msgid "Company"
+msgstr "Compñia"
+
+#. module: supply_order
+#: model_terms:ir.ui.view,arch_db:supply_order.stock_supply_calendar_form
+msgid "Config"
+msgstr "Configurar"
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_calendar__create_uid
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request__create_uid
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request_line__create_uid
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_rule__create_uid
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_wizard__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_calendar__create_date
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request__create_date
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request_line__create_date
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_rule__create_date
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_wizard__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_calendar__deadline
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request__send_date
+msgid "Date"
+msgstr "Fecha"
+
+#. module: supply_order
+#: model:ir.model.fields.selection,name:supply_order.selection__stock_supply_wizard__direction__outgoing
+msgid "Delivery"
+msgstr "Entrega"
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_wizard__direction
+msgid "Direction"
+msgstr "Direccion"
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_calendar__display_name
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request__display_name
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request_line__display_name
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_rule__display_name
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_wizard__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request__domain
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_rule__domain
+#: model_terms:ir.ui.view,arch_db:supply_order.stock_supply_rule_form
+msgid "Domain"
+msgstr "Dominio"
+
+#. module: supply_order
+#: model:ir.model.fields.selection,name:supply_order.selection__stock_supply_request__state__done
+#: model_terms:ir.ui.view,arch_db:supply_order.stock_supply_request_form
+msgid "Done"
+msgstr "Listo"
+
+#. module: supply_order
+#: model:ir.model.fields.selection,name:supply_order.selection__stock_supply_request__state__draft
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: supply_order
+#: model_terms:ir.ui.view,arch_db:supply_order.product_packaging_pop_view_tree
+#: model_terms:ir.ui.view,arch_db:supply_order.product_supply_view_kanban
+msgid "Drop"
+msgstr "Borrar"
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_wizard__filter_autocomplete
+msgid "Filter Autocomplete"
+msgstr ""
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request__filter_qty_available
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_wizard__filter_qty_available
+msgid "Filter Qty Available"
+msgstr ""
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: supply_order
+#: model:ir.model.fields.selection,name:supply_order.selection__stock_supply_rule__preparation_day__4
+#: model:ir.model.fields.selection,name:supply_order.selection__stock_supply_rule__recept_day__4
+#: model:ir.model.fields.selection,name:supply_order.selection__stock_supply_rule__request_day__4
+msgid "Friday"
+msgstr "Viernes"
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_calendar__orig_warehouse_id
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_rule__orig_warehouse_id
+msgid "From Warehouse"
+msgstr "Desde el deposito"
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_calendar__id
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request__id
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request_line__id
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_rule__id
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_wizard__id
+msgid "ID"
+msgstr ""
+
+#. module: supply_order
+#: model:ir.model.fields,help:supply_order.field_stock_supply_request__message_needaction
+#: model:ir.model.fields,help:supply_order.field_stock_supply_request__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: supply_order
+#: model:ir.model.fields,help:supply_order.field_stock_supply_request__message_has_error
+#: model:ir.model.fields,help:supply_order.field_stock_supply_request__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_calendar____last_update
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request____last_update
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request_line____last_update
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_rule____last_update
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_wizard____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_calendar__write_uid
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request__write_uid
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request_line__write_uid
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_rule__write_uid
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_wizard__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_calendar__write_date
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request__write_date
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request_line__write_date
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_rule__write_date
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_wizard__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_rule__preparation_day
+msgid "Limit preparation day"
+msgstr "Dia limite de preparacion"
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_rule__preparation_hour
+msgid "Limit preparation hour"
+msgstr "Hora limite de preparacion"
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_rule__recept_day
+msgid "Limit recept day"
+msgstr "Dia de Recepcion"
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_rule__recept_hour
+msgid "Limit recept hour"
+msgstr "Hora de la Recepcion"
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_rule__request_day
+msgid "Limit request day"
+msgstr "Dia limite para pedir"
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_rule__request_hour
+msgid "Limit request hour"
+msgstr "Hora limite para pedir"
+
+#. module: supply_order
+#: model_terms:ir.ui.view,arch_db:supply_order.stock_supply_rule_form
+msgid "Limite de pedido"
+msgstr ""
+
+#. module: supply_order
+#: model_terms:ir.ui.view,arch_db:supply_order.stock_supply_rule_form
+msgid "Limite preparacion"
+msgstr ""
+
+#. module: supply_order
+#: model_terms:ir.ui.view,arch_db:supply_order.stock_supply_request_form
+msgid "Lines"
+msgstr "Lineas"
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: supply_order
+#: model_terms:ir.ui.view,arch_db:supply_order.stock_supply_rule_form
+msgid "Make calendar"
+msgstr "Crear Agenda"
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: supply_order
+#: model:ir.model.fields.selection,name:supply_order.selection__stock_supply_rule__preparation_day__0
+#: model:ir.model.fields.selection,name:supply_order.selection__stock_supply_rule__recept_day__0
+#: model:ir.model.fields.selection,name:supply_order.selection__stock_supply_rule__request_day__0
+msgid "Monday"
+msgstr "Lunes"
+
+#. module: supply_order
+#: model_terms:ir.ui.view,arch_db:supply_order.product_supply_view_kanban
+msgid "My Available:"
+msgstr "Mi disponible"
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_product_product__my_virtual_available
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request_line__my_virtual_available
+msgid "My Stock"
+msgstr "Mi stock"
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_calendar__name
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request__name
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_rule__name
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_wizard__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: supply_order
+#: model_terms:ir.ui.view,arch_db:supply_order.product_supply_view_search
+msgid "Negative Forecasted Quantity"
+msgstr ""
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request__notes
+msgid "Notes"
+msgstr "Notas"
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: supply_order
+#: model:ir.model.fields,help:supply_order.field_stock_supply_request__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: supply_order
+#: model:ir.model.fields,help:supply_order.field_stock_supply_request__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: supply_order
+#: model:ir.model.fields,help:supply_order.field_stock_supply_request__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: supply_order
+#: model:ir.model,name:supply_order.model_stock_picking_type
+msgid "Picking Type"
+msgstr "Tipo de albarán"
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_calendar__route_ids
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_rule__route_ids
+msgid "Preferred Routes"
+msgstr "Rutas preferidas"
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_calendar__preparation_deadline
+msgid "Preparation deadline"
+msgstr "Fecha de preparacion"
+
+#. module: supply_order
+#: model:ir.model.fields,help:supply_order.field_stock_supply_request_line__list_price
+msgid "Price at which the product is sold to customers."
+msgstr ""
+
+#. module: supply_order
+#: model_terms:ir.ui.view,arch_db:supply_order.product_supply_view_kanban
+msgid "Price:"
+msgstr "Precio"
+
+#. module: supply_order
+#: model_terms:ir.ui.view,arch_db:supply_order.stock_supply_request_form
+msgid "Process"
+msgstr "Procesar"
+
+#. module: supply_order
+#: model:ir.model,name:supply_order.model_procurement_group
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request__procurement_group_id
+msgid "Procurement Group"
+msgstr "Grupo de abastecimiento"
+
+#. module: supply_order
+#: model:ir.model,name:supply_order.model_product_product
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request_line__product_id
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_wizard__product_ids
+#: model_terms:ir.ui.view,arch_db:supply_order.product_supply_view_kanban
+#: model_terms:ir.ui.view,arch_db:supply_order.product_supply_view_search
+msgid "Product"
+msgstr "Producto"
+
+#. module: supply_order
+#: model:ir.model,name:supply_order.model_product_packaging
+msgid "Product Packaging"
+msgstr "Empaquetado del producto"
+
+#. module: supply_order
+#: model_terms:ir.ui.view,arch_db:supply_order.product_supply_view_search
+msgid "Products"
+msgstr "Productos"
+
+#. module: supply_order
+#: model:ir.model.fields.selection,name:supply_order.selection__stock_supply_request__state__queued
+msgid "Queued"
+msgstr "En proceso"
+
+#. module: supply_order
+#: model:ir.model.fields.selection,name:supply_order.selection__stock_supply_wizard__direction__incoming
+msgid "Receipt"
+msgstr "Recepciones"
+
+#. module: supply_order
+#: model_terms:ir.ui.view,arch_db:supply_order.stock_supply_rule_form
+msgid "Recepcion"
+msgstr ""
+
+#. module: supply_order
+#: model_terms:ir.ui.view,arch_db:supply_order.stock_supply_request_form
+msgid "Recompute available"
+msgstr "Recalcualr disponibles"
+
+#. module: supply_order
+#: model:ir.actions.act_window,name:supply_order.action_stock_supply_request
+#: model:ir.ui.menu,name:supply_order.stock_supply_request_menu
+msgid "Request"
+msgstr "Abastecer"
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request__request_picking_ids
+msgid "Request Picking"
+msgstr "Remitos de abastecimiento"
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_calendar__request_deadline
+msgid "Request deadline"
+msgstr "Fecha limite de pedido"
+
+#. module: supply_order
+#: model_terms:ir.ui.view,arch_db:supply_order.stock_supply_request_form
+msgid "Request picking"
+msgstr "Remitos de abastecimiento"
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_calendar__rule_id
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request__rule_id
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_wizard__rule_id
+msgid "Rule"
+msgstr "Regla"
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: supply_order
+#: model:ir.model.fields.selection,name:supply_order.selection__stock_supply_rule__preparation_day__5
+#: model:ir.model.fields.selection,name:supply_order.selection__stock_supply_rule__recept_day__5
+#: model:ir.model.fields.selection,name:supply_order.selection__stock_supply_rule__request_day__5
+msgid "Saturday"
+msgstr "Sabado"
+
+#. module: supply_order
+#: model:ir.model.fields,help:supply_order.field_stock_supply_request_line__categ_id
+msgid "Select category for the current product"
+msgstr ""
+
+#. module: supply_order
+#: model:ir.model.fields.selection,name:supply_order.selection__stock_supply_request__state__send
+#: model_terms:ir.ui.view,arch_db:supply_order.stock_supply_request_form
+msgid "Send"
+msgstr "Enviar"
+
+#. module: supply_order
+#: model_terms:ir.ui.view,arch_db:supply_order.product_supply_view_search
+msgid "Services"
+msgstr ""
+
+#. module: supply_order
+#: model_terms:ir.ui.view,arch_db:supply_order.stock_supply_request_form
+msgid "Start"
+msgstr "Agregar productos"
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request__state
+msgid "State"
+msgstr "Estado"
+
+#. module: supply_order
+#: model_terms:ir.ui.view,arch_db:supply_order.stock_supply_rule_search
+msgid "String"
+msgstr ""
+
+#. module: supply_order
+#: model:ir.model.fields.selection,name:supply_order.selection__stock_supply_rule__preparation_day__6
+#: model:ir.model.fields.selection,name:supply_order.selection__stock_supply_rule__recept_day__6
+#: model:ir.model.fields.selection,name:supply_order.selection__stock_supply_rule__request_day__6
+msgid "Sunday"
+msgstr "Domingo"
+
+#. module: supply_order
+#: model:ir.ui.menu,name:supply_order.stock_supply_rule_menu
+msgid "Supply"
+msgstr "Abastecimiento"
+
+#. module: supply_order
+#: model:ir.ui.menu,name:supply_order.stock_supply_calendar_menu
+msgid "Supply Calendar"
+msgstr "Calendario de Abastecimiento"
+
+#. module: supply_order
+#: model:ir.actions.act_window,name:supply_order.action_stock_supply_rule
+#: model:ir.ui.menu,name:supply_order.stock_supply_rule_rule_menu
+msgid "Supply Rule"
+msgstr "Reglas de Abastecimiento"
+
+#. module: supply_order
+#: model:ir.actions.act_window,name:supply_order.action_stock_supply_calendar
+msgid "Supply calendar"
+msgstr "Calendario de Abastecimiento"
+
+#. module: supply_order
+#: model_terms:ir.ui.view,arch_db:supply_order.stock_supply_calendar_calendar
+msgid "Supplys"
+msgstr "Abastecimientos"
+
+#. module: supply_order
+#: model:ir.model.fields.selection,name:supply_order.selection__stock_supply_rule__preparation_day__3
+#: model:ir.model.fields.selection,name:supply_order.selection__stock_supply_rule__recept_day__3
+#: model:ir.model.fields.selection,name:supply_order.selection__stock_supply_rule__request_day__3
+msgid "Thursday"
+msgstr "Viernes"
+
+#. module: supply_order
+#: model_terms:ir.ui.view,arch_db:supply_order.stock_supply_rule_form
+msgid "Time"
+msgstr "Horario"
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_calendar__warehouse_id
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_rule__warehouse_id
+msgid "To Warehouse"
+msgstr "Al deposito"
+
+#. module: supply_order
+#: model:ir.model.fields.selection,name:supply_order.selection__stock_supply_rule__preparation_day__1
+#: model:ir.model.fields.selection,name:supply_order.selection__stock_supply_rule__recept_day__1
+#: model:ir.model.fields.selection,name:supply_order.selection__stock_supply_rule__request_day__1
+msgid "Tuesday"
+msgstr "Jueves"
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request__user_id
+msgid "User"
+msgstr ""
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_wizard__warehouse_id
+msgid "Warehouse"
+msgstr "Deposito"
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: supply_order
+#: model:ir.model.fields,help:supply_order.field_stock_supply_request__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: supply_order
+#: model:ir.model.fields.selection,name:supply_order.selection__stock_supply_rule__preparation_day__2
+#: model:ir.model.fields.selection,name:supply_order.selection__stock_supply_rule__recept_day__2
+#: model:ir.model.fields.selection,name:supply_order.selection__stock_supply_rule__request_day__2
+msgid "Wednesday"
+msgstr "Miercoles"
+
+#. module: supply_order
+#: model_terms:ir.ui.view,arch_db:supply_order.stock_supply_calendar_form
+msgid "calendar"
+msgstr "Agenda"
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request_line__central_virtual_available
+msgid "central Stock"
+msgstr "Stock central"
+
+#. module: supply_order
+#: model_terms:ir.ui.view,arch_db:supply_order.stock_supply_calendar_form
+msgid "crear nuevo abastecimiento"
+msgstr ""
+
+#. module: supply_order
+#: model_terms:ir.ui.view,arch_db:supply_order.stock_supply_wizard_view_form
+msgid "create"
+msgstr "Crear"
+
+#. module: supply_order
+#: model_terms:ir.ui.view,arch_db:supply_order.stock_supply_calendar_tree
+#: model_terms:ir.ui.view,arch_db:supply_order.stock_supply_rule_form
+#: model_terms:ir.ui.view,arch_db:supply_order.stock_supply_rule_tree
+msgid "description"
+msgstr ""
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request__last_recompute_available
+msgid "last recompute available"
+msgstr ""
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request__line_ids
+msgid "lines"
+msgstr ""
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request_line__list_price
+msgid "list_price"
+msgstr ""
+
+#. module: supply_order
+#: model_terms:ir.ui.view,arch_db:supply_order.product_supply_view_kanban
+msgid "mas"
+msgstr ""
+
+#. module: supply_order
+#: model:ir.actions.server,name:supply_order.action_stock_picking_type_supply_wizard
+#: model:ir.actions.server,name:supply_order.action_supply_wizard_from_list
+msgid "new Supply request"
+msgstr "Nuevo abastecimiento"
+
+#. module: supply_order
+#: model_terms:ir.ui.view,arch_db:supply_order.stock_picking_type_kanban
+msgid "new supply"
+msgstr "Nuevo abastecimiento"
+
+#. module: supply_order
+#: code:addons/supply_order/wizard/stock_supply_wizard.py:0
+#, python-format
+msgid "new supply request"
+msgstr "Nuevo abastecimiento"
+
+#. module: supply_order
+#: model_terms:ir.ui.view,arch_db:supply_order.product_packaging_pop_view_tree
+msgid "packaging"
+msgstr "Paquetes"
+
+#. module: supply_order
+#: model_terms:ir.ui.view,arch_db:supply_order.stock_supply_calendar_form
+msgid "process"
+msgstr "Procesar"
+
+#. module: supply_order
+#: model:ir.actions.act_window,name:supply_order.action_product_supply
+msgid "product_supply"
+msgstr ""
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_product_product__supply_qty
+msgid "qty"
+msgstr "Cant."
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request_line__quantity
+msgid "quantity"
+msgstr "Cant."
+
+#. module: supply_order
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_calendar__request_ids
+#: model:ir.model.fields,field_description:supply_order.field_stock_supply_request_line__request_id
+#: model_terms:ir.ui.view,arch_db:supply_order.stock_picking_type_kanban
+#: model_terms:ir.ui.view,arch_db:supply_order.stock_supply_calendar_form
+#: model_terms:ir.ui.view,arch_db:supply_order.stock_supply_request_form
+#: model_terms:ir.ui.view,arch_db:supply_order.stock_supply_request_tree
+#: model_terms:ir.ui.view,arch_db:supply_order.stock_supply_request_view_search
+msgid "request"
+msgstr "Abastecimiento"
+
+#. module: supply_order
+#: model:ir.model,name:supply_order.model_stock_supply_calendar
+msgid "supply calendar"
+msgstr "Agenda de abastecimientos"
+
+#. module: supply_order
+#: model:ir.model,name:supply_order.model_stock_supply_request
+msgid "warehouse supply request"
+msgstr "Abastecimiento"
+
+#. module: supply_order
+#: model:ir.model,name:supply_order.model_stock_supply_request_line
+msgid "warehouse supply request line"
+msgstr "Linea de Abastecimiento"
+
+#. module: supply_order
+#: model:ir.model,name:supply_order.model_stock_supply_rule
+msgid "warehouse supply rule"
+msgstr "Regla de Abastecimiento"
+
+#. module: supply_order
+#: model:ir.model,name:supply_order.model_stock_supply_wizard
+msgid "warehouse supply wizard"
+msgstr "Abastecimiento"
+
+#. module: supply_order
+#: model_terms:ir.ui.view,arch_db:supply_order.product_packaging_pop_view_tree
+msgid "x10"
+msgstr "X10"
+
+#. module: supply_order
+#: model_terms:ir.ui.view,arch_db:supply_order.product_packaging_pop_view_tree
+msgid "x2"
+msgstr "X2"
+
+#. module: supply_order
+#: model_terms:ir.ui.view,arch_db:supply_order.product_packaging_pop_view_tree
+msgid "x5"
+msgstr "X5"
