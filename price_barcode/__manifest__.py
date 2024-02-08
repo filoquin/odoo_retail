@@ -34,6 +34,7 @@
     ],
     'data': [
         'views/assets.xml',
+        'views/templates.xml',
         'wizards/price_checker.xml',
     ],
     'demo': [
